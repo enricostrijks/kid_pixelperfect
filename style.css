@@ -1,0 +1,290 @@
+@font-face {
+  font-family: Century;
+  src: url(./fonts/gothicb.ttf);
+}
+
+@font-face {
+  font-family: Freak;
+  src: url(./fonts/Carnevalee-Freakshow.ttf);
+}
+
+h1 {
+  font-family: Century;
+  text-align: center;
+  color: white;
+}
+
+.slide1 {
+  background: url("./img/slide1/shadow.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.slide2 {
+  background: url("./img/slide2/degrader1.png");
+  background-size: cover;
+  background-repeat: none;
+}
+.slide3 {
+  background: url("./img/slide3/degrader5.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.slide4 {
+  background: url("./img/slide4/degrader3.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.slide5 {
+  background: url("./img/slide5/degrader6.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+span {
+  background: white !important;
+}
+
+.digitzlogo {
+  position: fixed;
+  bottom: 40rem;
+  right: 51rem;
+}
+
+.bottom-arrow {
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.5%;
+}
+
+.geluk {
+  font-family: Century;
+  font-size: 2rem;
+  color: white;
+  position: fixed;
+  bottom: 35rem;
+  right: 42rem;
+}
+
+.duizenden {
+  font-family: Century;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 33rem;
+  right: 50rem;
+}
+
+.digtext {
+  text-align: center;
+  font-family: Century;
+  position: fixed;
+  bottom: 29rem;
+  right: 38rem;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.projtext {
+  text-align: center;
+  font-family: Century;
+  position: absolute;
+  bottom: 8rem;
+  right: 36rem;
+  font-size: 46px;
+  color: white;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.betrotext {
+  text-align: center;
+  font-family: Century;
+  position: absolute;
+  bottom: 7rem;
+  right: 41.5rem;
+  font-size: 20px;
+  color: #f3c81a;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.happyimage {
+  position: fixed;
+  bottom: 10rem;
+  right: 51rem;
+  max-width: 300px;
+  -webkit-animation: fadein 5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 5s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 5s ease-in-out; /* Opera < 12.1 */
+  animation: fadein 5s ease-in-out;
+}
+
+.slotsimage {
+  position: absolute;
+  z-index: 3;
+  bottom: 14rem;
+  right: 46rem;
+}
+
+.feu1 {
+  position: fixed;
+  bottom: 21rem;
+  left: 50rem;
+  -webkit-animation: fadein 5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 5s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 5s ease-in-out; /* Opera < 12.1 */
+  animation: fadein 5s ease-in-out;
+}
+
+.feu2 {
+  position: fixed;
+  bottom: 23rem;
+  right: 46rem;
+  -webkit-animation: fadein 5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 5s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 5s ease-in-out; /* Opera < 12.1 */
+  animation: fadein 5s ease-in-out;
+}
+
+.feu3 {
+  position: fixed;
+  bottom: 10rem;
+  left: 50rem;
+  -webkit-animation: fadein 5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 5s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 5s ease-in-out; /* Opera < 12.1 */
+  animation: fadein 5s ease-in-out;
+}
+
+.etoile1 {
+  position: absolute;
+  bottom: 31.5rem;
+  left: 50rem;
+  z-index: 4;
+}
+
+.etoile2 {
+  position: absolute;
+  bottom: 31rem;
+  right: 50rem;
+  z-index: 4;
+}
+
+.etoile3 {
+  position: absolute;
+  bottom: 20rem;
+  left: 52rem;
+  z-index: 4;
+}
+
+#spriteslots {
+  position: absolute;
+  left: 41.5%;
+  bottom: 36.9rem;
+  z-index: 1;
+}
+
+#birdslots {
+  position: absolute;
+  left: 60%;
+  bottom: 36.9rem;
+}
+
+#counter {
+  font-family: Freak;
+  font-size: 60px;
+  background-color: #f3c81a;
+  letter-spacing: 0.6em;
+  display: inline-block;
+  margin-left: 53rem;
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.bg_the {
+  transform: scale(0.6);
+  margin-left: 40rem;
+}
+
+.bg_cafe {
+  transform: scale(0.6);
+}
+
+#smoke1 {
+  position: absolute;
+  top: 14.3rem;
+  left: 47.9rem;
+}
+
+#smoke2 {
+  position: absolute;
+  top: 11.5rem;
+  left: 67rem;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

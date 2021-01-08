@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section slide1">
+        <img src="./img/slide1/het-zidigt-logo.png" class="digitzlogo" />
+        <h2 class="geluk">Geluk, gezondheid, welvaart en ...</h2>
+        <h2 class="duizenden">duizenden klikken!</h2>
+        <div class="el">
+          <p class="digtext">
+            Dat is alles wat Digitz u wenst voor het nieuwe jaar. Om dit te
+            bereiken kunt u rekenen <br />
+            op ons veelzijdige team, onze ervaring en ons reactievermogen! Het
+            bewijs met de <br />
+            <strong>cijfers</strong> van vorig jaar, die net zijn gevallen!
+          </p>
+        </div>
+        <img src="./img/slide1/happy.png" class="happyimage" />
+        <img src="./img/slide1/feu1.png" class="feu1" />
+        <img src="./img/slide1/feu2.png" class="feu2" />
+        <img src="./img/slide1/feu3.png" class="feu3" />
+        <a href="#slide5"
+          ><img src="./img/slide1/nav-bottom.png" class="bottom-arrow"
+        /></a>
+      </div>
+
+      <div class="section slide2">
+        <img src="./img/slide2/slot-ipad.png" class="slotsimage" />
+        <div id="spriteslots" class="sprite"></div>
+        <div id="birdslots" class="sprite"></div>
+        <img src="./img/slide2/etoile1.png" class="etoile1" />
+        <img src="./img/slide2/etoile2.png" class="etoile2" />
+        <img src="./img/slide2/etoile3.png" class="etoile3" />
+        <div id="counter"></div>
+        <p class="projtext">113 Projecten succesvol afgerond.</p>
+        <p class="betrotext">
+          Betrokkenheid, creativiteit en een glimlach gegarandeerd.
+        </p>
+        <a href="#slide5"
+          ><img src="./img/slide1/nav-bottom.png" class="bottom-arrow"
+        /></a>
+      </div>
+
+      <div class="section slide3">
+        <img src="./img/slide3/bg_the.png" class="bg_the" />
+        <img src="./img/slide3/bg_cafe.png" class="bg_cafe" />
+        <div id="smoke1" class="sprite"></div>
+        <div id="smoke2" class="sprite"></div>
+        <a href="#slide5"
+          ><img src="./img/slide1/nav-bottom.png" class="bottom-arrow"
+        /></a>
+      </div>
+
+      <div class="section slide4"></div>
+
+      <div class="section slide5"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/jsprite.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+
+    <script>
+      new fullpage("#fullpage", {
+        autoScrolling: true,
+        navigation: true,
+        anchors: ["slide1", "slide2", "slide3", "slide4", "slide5"],
+      });
+    </script>
+
+    <script>
+      const counter = document.querySelector("#counter");
+
+      var c = new CountUp(counter, 0, 113);
+
+      c.start();
+    </script>
+
+    <script>
+      slotMachine = new jSprite({
+        spriteSheet: "./img/slide2/sprite-light.png",
+        container: "spriteslots",
+        columns: 3, // required
+        autoStart: true,
+        rows: 1, // required
+        timing: 100, // required
+        repeat: true,
+        length: 3,
+      });
+      slotMachine.start();
+    </script>
+
+    <script>
+      slotBird = new jSprite({
+        spriteSheet: "./img/slide2/bird.png",
+        container: "birdslots",
+        columns: 4, // required
+        autoStart: true,
+        rows: 1, // required
+        timing: 100, // required
+        repeat: true,
+        length: 4,
+      });
+      slotBird.start();
+    </script>
+
+    <script>
+      bgThe = new jSprite({
+        spriteSheet: "./img/slide3/smoke.png",
+        container: "smoke1",
+        columns: 16, // required
+        autoStart: true,
+        rows: 1, // required
+        timing: 1000, // required
+        repeat: true,
+        length: 16,
+      });
+      bgThe.start();
+    </script>
+
+    <script>
+      bgCafe = new jSprite({
+        spriteSheet: "./img/slide3/smoke.png",
+        container: "smoke2",
+        columns: 16, // required
+        autoStart: true,
+        rows: 1, // required
+        timing: 1300, // required
+        repeat: true,
+        length: 16,
+      });
+      bgCafe.start();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
